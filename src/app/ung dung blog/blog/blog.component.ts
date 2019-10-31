@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {PostService} from '../post.service';
-import {Post} from '../interface/post';
+import {Post} from '../../interface/post';
 
 @Component({
   selector: 'app-blog',

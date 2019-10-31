@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {BlogComponent} from './blog/blog.component';
-import {BlogDetailComponent} from './blog-detail/blog-detail.component';
-import {BlogEditComponent} from './blog-edit/blog-edit.component';
+import {BlogComponent} from './ung dung blog/blog/blog.component';
+import {BlogDetailComponent} from './ung dung blog/blog-detail/blog-detail.component';
+import {BlogEditComponent} from './ung dung blog/blog-edit/blog-edit.component';
+import {TodoComponent} from './ung dung todo/todo/todo.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,9 @@ const routes: Routes = [
   }, {
     path: 'blog/:id/edit',
     component: BlogEditComponent
-  }
+  },
+  {path: 'todo',
+  component: TodoComponent}
 ];
 
 @NgModule({
